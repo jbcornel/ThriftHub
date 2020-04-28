@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrifthub-Home</title>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+    <!--custom Stylesheet-->
+    <link rel="stylesheet" href = "css/style.css" />
+    <!--slick slider link-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+</head>
+<body>
+<!--Header-->
+<header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+            <div class="dropdown my-md-4 my-2">
+                <button onclick="dropDown()" class="dropbtn">USD</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a>ERU Euro</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <h2 class="my-md-3 site-title">Thrifthub</h2>
+        </div>
+        <div class="col-md-4 col-12 text-right">
+            <p class="my-md-4 header-links">
+                <a href="#" class="link px-2">Sign in</a>
+                <a href="#" class="link px-2">Create an account</a>
+
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg  ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inventory.html">INVENTORY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav">
+            <li class="nav-item mx-2 search-icon">
+                <i class="fas fa-search p-2"></i>
+            </li>
+        </div>
+        <div class="navbar-nav">
+            <li class="nav-item mx-2 search-icon">
+                <i class="fas fa-shopping-basket p-2"></i>
+            </li>
+        </div>
+      </nav>    
+</div>
+</header>
+<main>
+<!--first slider-->
+<div class="site-slider container-fluid p-0">
+    <div class="slider-one">
+        
+            <div class="slide1Image">
+               <img src="assets/slide1Photo.JPG" alt="banner1" class="img-fluid responsive">
+                
+            </div>
+        
+        
+            <div class="slide2Image">
+              <img src="assets/slide2Photo.JPG" alt="banner2" class="img-fluid responsive">
+
+            </div>
+        
+        
+            <div class="slide3Image">
+              <img src="assets/slide3Photo.jpg" alt="banner3" class="img-fluid responsive">
+
+            </div>
+        
+    </div>
+    <div class="slider-btn">
+      <span class="prev position-top"><i class ="fas fa-chevron-left"></i></span>
+      <span class="next position-top right-0"><i class ="fas fa-chevron-right"></i></span>
+    </div>
+  </div>
+ <div class="container-fluid">
+   <div class="site-slider-two px-md-4">
+     <div class="slider-two row text-center">
+       <div class="col-md-2 product pt-md-5 pt-4 productSlide1">
+         <img src="assets/goofyCrewneckFront.JPG" alt="Product 1">
+         <span class="border site-btn btn-span">Goofy Crewneck</span>
+       </div>
+       <div class="col-md-2 product pt-md-5 pt-4 productSlide2">
+        <img src="assets/donaldFront.JPG" alt="Product 2">
+        <span class="border site-btn btn-span">Donald's Destroyers Jersey</span>
+      </div>
+      <div class="col-md-2 product pt-md-5 pt-4 productSlide3">
+        <img src="assets/lightGreyHawiianFront.JPG" alt="Product 3">
+        <span class="border site-btn btn-span">Grey Hawaiian Button Up</span>
+      </div>
+      <div class="col-md-2 product pt-md-5 pt-4 productSlide4">
+        <img src="assets/pistonsFront.JPG" alt="Product 4">
+        <span class="border site-btn btn-span">Pistons Jersey</span>
+      </div>
+      <div class="col-md-2 product pt-md-5 pt-4 productSlide5">
+        <img src="assets/blackHawaiianFront.JPG" alt="Product 4">
+        <span class="border site-btn btn-span">Black Hawaiian Button Up</span>
+      </div>
+      <div class="col-md-2 productSide pt-md-5 pt-4 productSlide6">
+        <img src="assets/blueFront.JPG" alt="Product 4">
+        <span class="border site-btn btn-span">Blue Button Up</span>
+      </div>
+      
+     </div>
+     <div class="slider-btn">
+      <span class="prev position-top"><i class ="fas fa-chevron-left fa-2x text-secondary"></i></span>
+      <span class="next position-top right-0"><i class ="fas fa-chevron-right fa-2x text-secondary"></i></span>
+    </div>
+  </div>
+   </div>
+ </div> 
+ 
+</main>
+<footer><p><br><br><br></p></footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+<script src="js/script.js"></script>
+
+</html>

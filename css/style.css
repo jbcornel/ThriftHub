@@ -1,0 +1,559 @@
+/*import fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu:500&display=swap');
+
+:root{
+    --primary-color: #FFFF;
+    --lightGrey : #2b3032a1;
+    --grey: rgb(59, 59, 59);
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --ubuntu: "Ubuntu", Sans-serif;
+    --Montserrat: "Montserrat", Sans-serif;
+}
+
+footer{background-color: rgb(204, 247, 255);
+}
+.primary-color{
+    color: var(--primary-color)
+}
+
+h1{
+    color: var(--primary-color)
+}
+
+
+.bg-primary-color{
+    background-color: var(--lightGrey)!important;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.font-ubuntu{
+    font-family: var(--ubuntu);
+}
+
+.font-Montserrat{
+    font-family: var(--Montserrat);
+}
+
+header{
+    background-color:var(--grey) ;
+    font-family: var(--Montserrat)
+}
+
+header .site-title{
+    color: var(--primary-color);
+    font-family: var(--Montserrat);
+}
+
+header .dropbtn{
+    background-color: var(--grey);
+    color: var(--primary-color);
+    border-radius:4px;
+    
+}
+header .dropbtn:hover{
+    transform: scale(1.05);
+}
+
+
+.dropdown-content {
+    display: none;
+    font-family:var(--ubuntu);
+    position: absolute;
+    background-color: var(--text-color);
+    
+    color:var(--primary-color);
+    border-radius:2px;
+    border-color: var(--primary-color);
+    border-style:solid;
+    border-width:1px;
+    font-size: 15px
+    
+   
+    
+    
+    
+   
+  }
+
+  .show {display:block;}
+  
+  .container-fluid{
+      background-color: rgb(204, 247, 255);
+  }
+  .header-links a{
+      font-size:0.9em !important;
+      text-decoration: none;
+      color:var(--primary-color);
+      font-family:var(--Montserrat);
+  }
+
+  .header-links a:hover{
+    color: lightblue;
+
+  }
+
+  .navbar a:hover{
+      transform: scale(1.2)
+    }
+
+  header .navbar{
+      font-family:var(--ubuntu);
+      background-color: var(--text-color);
+      
+      
+      
+  }
+
+ .navbar-nav .nav-item a{
+    padding: .4em;
+} 
+.navbar-nav .nav-item .nav-link{
+    padding:0 3em;
+}
+.navbar a{
+    margin-left: 50px;
+    color: var(--primary-color);
+    
+   
+
+}
+/* slick{
+    color:black !important;
+    background-color:grey;
+} */
+
+
+.navbar-nav i{
+    border:solid;
+    border-color: black;
+    border-radius: 100px;
+    padding: 0 1.3em;
+   
+}
+.navbar-nav i:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.responsive {
+    width: 100%;
+    height: 600px;
+    
+  }
+
+.site-slider{
+    position:relative;
+}
+.position-top{
+position:absolute;
+top:45%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+    background-color:var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    color:white;
+    margin:0 1rem;
+    opacity:0;
+    transition:opacity 1s ease;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity:1;
+}
+
+.right-0{
+    right:0;
+}
+
+.slick-dots{
+    display:flex !important;
+    justify-content: center;
+    margin:0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom:0;
+    right:50%;
+}
+
+.slick-dots li{
+    margin:0 0.6rem;
+    
+    
+}
+.slick-dots button{
+    display: block;
+    width:.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border:none;
+    background-color: var(--text-color);
+    text-indent: -99999px;
+    border-radius:100%;
+    outline:none;
+}
+
+.slick-dots li.slick-active button{
+    transform: scale(2.5);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0);
+    
+}
+
+.site-slider-two .product{
+    height:37rem;
+    position:relative;
+    overflow:hidden;
+    outline:none;
+}
+
+.site-slider-two{
+    position:relative;
+    height:30%;
+    background-color: rgb(204, 247, 255);
+
+}
+.site-slider-two .product img{
+width:90%;
+height:23rem;
+margin:auto;
+
+
+}
+.site-slider-two .productSide img{
+    width:90%;
+    height:15rem;
+    margin:auto;
+    
+    
+    }
+
+.site-btn.btn-span{
+    padding: 0.8rem 1.9rem;
+    border-radius:4rem;
+    border: 1px var(--primary-color);
+    background-color:var(--grey);
+    color: var(--primary-color);
+}
+
+.slider-two .slick-track .product:hover span{
+    background-color: var(--text-color);
+}
+.slider-two .slick-track .productSide:hover span{
+    background-color: var(--text-color);
+}
+
+
+.aboutUs{
+    background-color: rgb(204, 247, 255);
+}
+p.aboutUs{
+    margin-top:7px;
+    margin-left:7px;
+    padding-top: 50px;
+    color: black;   
+    float:left !important;
+    font-family:var(--Montserrat) !important;
+    max-width:59% !important;
+    display: table-cell !important;
+    line-height: 25px;
+    
+        
+
+}
+img.aboutUs{
+    margin-top: 52px;
+    margin-right:5px;
+    float:right !important;
+    max-width:40% !important;
+    border: solid var(--text-color) 2px;
+    border-radius:15px;
+}
+
+h1.aboutUs{
+    color: var(--text-color);
+    margin-top:14px;
+             
+            
+            background-color: var(--primary-color);
+            border: solid var(--text-color) 2px;
+            border-radius:15px; 
+            left: 50%;
+            margin-left:600px;
+            margin-right:600px;
+            width:11rem;
+             
+            text-align:center;
+}
+h1.aboutUs:hover{
+    transform: scale(1.05);
+}
+img.aboutUs:hover{
+    transform: scale(1.05);
+}
+
+
+a.aboutUs:hover{
+    color:white !important;
+       
+}
+
+a.link.px-2{
+    text-decoration: none;
+
+}
+a.nav-link{
+    padding:0 3em !important;
+    background-color: var(--text-color)
+}
+
+
+
+
+/*asp.net car plugin*/
+img.card-img {
+    height: 50px;
+    width: 50px;
+    
+    
+    
+    
+}
+
+.card-columns{
+    max-width: 100%;
+    background-color: rgb(204, 247, 255);
+    
+    
+}
+
+div .card{
+    margin:1rem;
+    margin-bottom:2rem !important;
+    max-inline-size: 80%;
+    border:solid;
+    border-color: #ff686b;
+    border-radius: 5px;
+    
+    
+    
+    
+    
+    
+}
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.card-columns .card:hover .card-img {
+    opacity: 1;
+    background-color: white;
+}
+
+
+.card-columns .card-body {
+    height: 100px;
+    
+   font-size: 12px;
+   
+   
+   
+    
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(59, 59, 59);
+}
+.card-columns .card-title {
+    font-family: var(--ubuntu);
+    font-size: 32px;
+    
+    font-weight: 300;
+}
+.card-columns .card-img {
+    height: 100%;
+    width:100%;
+    vertical-align: bottom;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: .87;
+    border-radius:0 !important;
+    
+    
+}
+
+
+
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-columns .card:hover {
+    text-shadow: 2px 2px var(--text-color);
+    transform: scale(1.05);
+    
+   
+}
+
+h5.card-title{
+    text-align:center;
+    color: white;
+}
+.inventoryHeader{
+    text-align: center;
+    height:3.3rem;
+    color: var(--text-color);
+    text-shadow:-1px 1px 0 #000, 1px 1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+    background-color: rgb(204, 247, 255);
+    margin: 0px;
+    
+}
+
+h1.productPage{
+    color: var(--text-color);
+    margin-top:14px;
+             
+            
+            background-color: var(--grey);
+            border: solid var(--text-color) 2px;
+            border-radius:15px; 
+            width:40%;
+            text-align: center;
+            float:right;
+            text-shadow:-1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color),
+    1px -1px 0 var(--primary-color),
+   -1px -1px 0 var(--primary-color);
+            
+}
+.productPage{
+    width:100%;
+}
+h1.productPage:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.displayPhoto{
+    max-width:50%
+}
+img.displayPhoto{
+    max-width: 25%;
+    height:25rem;
+    margin:1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--text-color);
+    float:left
+    
+}
+img.displayPhotoTexture{
+    max-width: 25%;
+    height:auto;
+    margin:1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--text-color);
+    float:left
+    
+}
+
+img.displayPhoto:hover{
+        transform:scale(1.3);
+}
+
+img.displayPhotoTexture:hover{
+    transform:scale(1.3);
+}
+
+body.productPage{
+    background-color: rgb(204, 247, 255);
+}
+p.photoContainer{
+
+    margin-right:7px;
+    
+    color: red;   
+    float:right !important;
+    margin-right:10rem;
+    font-family:var(--Montserrat) !important;
+    max-width:30% !important;
+    display: table-cell !important;
+    line-height: 25px;
+    text-shadow:-1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color),
+    1px -1px 0 var(--primary-color),
+   -1px -1px 0 var(--primary-color);
+    
+    
+        
+
+}
+p.productTitle {
+    
+    margin-right:11rem;
+    margin-top:5rem;
+    padding:10px !important;
+    color: white;   
+    float:right !important;
+    font-family:var(--Montserrat) !important;
+    max-width:30% !important;
+    display: table-cell !important;
+    line-height: 25px;
+    text-align: center !important;
+    border-style: solid;
+    border-width:2px;
+    border-color: var(--text-color);
+    border-radius:10px;
+    background-color: var(--grey);
+    font-size: 40px;
+    
+
+    
+    
+        
+
+}
+p.productTitle:hover{
+    transform:scale(1.01);
+}
+a.buyNowButton {
+    text-decoration: none !important;
+    margin-right:11rem;
+    margin-top:5rem;
+    padding:10px !important;
+    color: white;   
+    float:right !important;
+    font-family:var(--Montserrat) !important;
+    max-width:30% !important;
+    display: table-cell !important;
+    line-height: 25px;
+    text-align: center !important;
+    border-style: solid;
+    border-width:2px;
+    border-color: var(--text-color);
+    border-radius:10px;
+    background-color: var(--grey);
+    font-size: 40px;
+    
+
+    
+    
+        
+
+}
+a.buyNowButton:hover{
+    color:white !important;
+    transform:scale(1.2);
+}
+
+
+
